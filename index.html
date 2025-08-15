@@ -19,7 +19,7 @@
 <body class="selection:bg-indigo-300 selection:text-indigo-900">
 
     <!-- Menu de Navegação -->
-    <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+    <header id = "nav" class="fixed top-4 left-1/2 -translate-x-1/2 z-50">
         <nav class="bg-white/80 backdrop-blur-sm shadow-lg rounded-full px-6 py-5 flex justify-center items-center space-x-6 ring-1 ring-slate-900/5">
             <a href="#home" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors duration-200">Início</a>
             <a href="#portfolio" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors duration-200">Portfólio</a>
@@ -190,6 +190,18 @@
                     scrollToTopBtn.classList.add('invisible', 'opacity-0');
                 }
             });
+
+            //Escondendo  a navbar quando descer a página
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if(prevScrollpos > currentScrollPos || currentScrollPos < 50) {
+                    document.getElementById("nav").style.top = "1rem";
+                } else {
+                    document.getElementById("nav").style.top = "-100px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
 
             // Rolagem suave para o topo
             scrollToTopBtn.addEventListener('click', (e) => {
