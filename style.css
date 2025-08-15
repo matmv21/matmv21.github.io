@@ -1,0 +1,21 @@
+/* Define a fonte padrão para todo o corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    scroll-behavior: smooth;
+}
+
+/* Estilo para a navegação fixa no topo */
+.nav-menu {
+    transition: top 0.3s ease-in-out;
+}
+
+/* Estilo para o botão de voltar ao topo */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}

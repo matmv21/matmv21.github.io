@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Inclui o Tailwind CSS via CDN para estilos responsivos e modernos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inclui a fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Inclui o Font Awesome para ícones sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="selection:bg-indigo-300 selection:text-indigo-900">
+
+    <!-- Menu de Navegação -->
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+        <nav class="bg-white/80 backdrop-blur-sm shadow-lg rounded-full px-6 py-5 flex justify-center items-center space-x-6 ring-1 ring-slate-900/5">
+            <a href="#home" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors duration-200">Início</a>
+            <a href="#portfolio" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors duration-200">Portfólio</a>
+            <a href="#about" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors duration-200">Sobre</a>
+            <a href="#contact" class="text-sm font-semibold text-gray-700 hover:text-indigo-600 transition-colors duration-200">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4">
+
+        <!-- Seção de Início -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center pt-24 pb-12">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-4 animate-pulse">
+                Meu Portfólio
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8">
+                Desenvolvedor Full-Stack e Designer apaixonado por criar soluções inovadoras e funcionais. Explore meus projetos e saiba mais sobre o meu trabalho.
+            </p>
+            <a href="#portfolio" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+                Ver Projetos
+            </a>
+        </section>
+
+        <!-- Seção de Portfólio -->
+        <section id="portfolio" class="py-24 p-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Meus Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card de Projeto 1 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/7733ff/white?text=Projeto+1" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Projeto de E-commerce</h3>
+                        <p class="text-gray-600 text-sm">Um site completo de e-commerce com carrinho de compras, sistema de pagamento e painel de administração.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline font-semibold">Saiba mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card de Projeto 2 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/004d40/white?text=Projeto+2" alt="Imagem do Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Plataforma de Blog</h3>
+                        <p class="text-gray-600 text-sm">Uma plataforma robusta para criação e gerenciamento de blogs, com editor de texto e autenticação de usuários.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline font-semibold">Saiba mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card de Projeto 3 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/f57f17/white?text=Projeto+3" alt="Imagem do Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Aplicativo de Tarefas</h3>
+                        <p class="text-gray-600 text-sm">Um aplicativo mobile de lista de tarefas com sincronização em tempo real e notificações personalizadas.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline font-semibold">Saiba mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card de Projeto 4 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/c7a522/white?text=Projeto+4" alt="Imagem do Projeto 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Dashboard Analítico</h3>
+                        <p class="text-gray-600 text-sm">Um painel de controle interativo para visualizar dados de vendas e performance com gráficos e métricas.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline font-semibold">Saiba mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card de Projeto 5 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/17f5af/white?text=Projeto+5" alt="Imagem do Projeto 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Site de Receitas</h3>
+                        <p class="text-gray-600 text-sm">Um site com busca de receitas, avaliações dos usuários e a possibilidade de submeter novas receitas.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline font-semibold">Saiba mais &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card de Projeto 6 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/1717f5/white?text=Projeto+6" alt="Imagem do Projeto 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Landing Page para SaaS</h3>
+                        <p class="text-gray-600 text-sm">Uma página de destino moderna e responsiva para um serviço de software como serviço (SaaS), com formulário de contato.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline font-semibold">Saiba mais &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="about" class="py-24">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                    <img src="https://placehold.co/400x400/E879F9/white?text=Foto" alt="Foto de Perfil" class="w-full h-full object-cover rounded-full shadow-md">
+                </div>
+                <div class="text-gray-700">
+                    <p class="mb-4 text-lg">
+                        Olá! Sou um desenvolvedor com mais de 5 anos de experiência, especializado em criar aplicações web robustas e escaláveis. Minhas principais habilidades incluem:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-base">
+                        <li><span class="font-semibold">Linguagens de Programação:</span> JavaScript (ES6+), Python, PHP</li>
+                        <li><span class="font-semibold">Frameworks Front-end:</span> React, Vue.js, Tailwind CSS</li>
+                        <li><span class="font-semibold">Frameworks Back-end:</span> Node.js (Express), Django, Laravel</li>
+                        <li><span class="font-semibold">Bancos de Dados:</span> PostgreSQL, MongoDB, MySQL</li>
+                        <li><span class="font-semibold">Ferramentas:</span> Git, Docker, AWS</li>
+                    </ul>
+                    <p class="mt-4 text-lg">
+                        Estou sempre buscando aprender novas tecnologias e enfrentar desafios que me permitam crescer profissionalmente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contact" class="py-24 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Vamos Conversar?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Se você tem um projeto em mente ou apenas quer saber mais sobre meu trabalho, sinta-se à vontade para entrar em contato.
+            </p>
+            <!-- Botão de WhatsApp com mensagem pré-definida -->
+            <a href="https://wa.me/5589994633402?text=Ol%C3%A1%2C%20estou%20vindo%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20trabalho!" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-10 rounded-full shadow-lg transform transition duration-300 hover:scale-105">
+                <i class="fab fa-whatsapp mr-2"></i> Enviar mensagem via WhatsApp
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p class="text-sm">&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+            <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/matmv21" class="text-gray-400 hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mateus-vieira-835b111b2/" class="text-gray-400 hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <!-- Botão para voltar ao topo -->
+                <button id="scrollToTopBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg opacity-0 invisible transform transition duration-300 hover:scale-110">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para o botão "voltar ao topo" e para a navegação suave
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            const navLinks = document.querySelectorAll('header nav a');
+            const navMenu = document.querySelector('header nav');
+
+            // Exibe o botão quando o usuário rola para baixo
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.remove('invisible', 'opacity-0');
+                    scrollToTopBtn.classList.add('visible', 'opacity-100');
+                } else {
+                    scrollToTopBtn.classList.remove('visible', 'opacity-100');
+                    scrollToTopBtn.classList.add('invisible', 'opacity-0');
+                }
+            });
+
+            // Rolagem suave para o topo
+            scrollToTopBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Animação de rolagem suave para os links do menu
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - navMenu.offsetHeight - 20, // Ajusta o scroll para o menu
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
