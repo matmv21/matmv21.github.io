@@ -6,6 +6,10 @@ body {
     scroll-behavior: smooth;
 }
 
+#navbar {
+    transition: top 0.3s ease-in-out;
+}
+
 /* Estilo para a navegação fixa no topo */
 .nav-menu {
     transition: top 0.3s ease-in-out;
